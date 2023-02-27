@@ -19,6 +19,7 @@ JOBS = [
     'id': 3,
     'title': 'Frontend Developer',
     'location': 'Remote',
+    'salary': '$20,000.00'
     },
     {
     'id': 4,
