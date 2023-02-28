@@ -1,3 +1,8 @@
+#database: juocareers
+#username: umnnimetuxp59phbz9v8
+#host: us-east.connect.psdb.cloud
+#Password: pscale_pw_eWchJ41ZVbU3pCyV4xUQ1alIinALYEpOcVJWEk2BWtA
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
