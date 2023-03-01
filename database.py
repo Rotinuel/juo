@@ -1,4 +1,4 @@
-from flask_sqlalchemy import SQLAlchemy, create_engine, text
+from sqlalchemy import  create_engine, text
 
 db_connection_string = "mysql+pymysql://umnnimetuxp59phbz9v8:pscale_pw_eWchJ41ZVbU3pCyV4xUQ1alIinALYEpOcVJWEk2BWtA@us-east.connect.psdb.cloud/juocareers?charset=utf8mb4"
 
