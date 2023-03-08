@@ -1,3 +1,5 @@
+from flask import request
+from alembic import op
 from sqlalchemy import  create_engine, text
 import os
 
@@ -31,3 +33,13 @@ def convert_to_dict(row):
     id, title, location, salary, currency, responsibilities, requirements = row
     data = dict(id=id, title=title, salary=salary, currency=currency, location=location, requirements=requirements, responsibilities=responsibilities)
     return data
+
+
+def load_job_from_db(id):
+    with engine.connect() as conn:
+        stmt = text("SELECT * FROM jobs WHERE id=:job_id")
+        result = conn.execute(stmt, dict(job_id=id))
+        r = result.first()
+        if r:
+            return convert_to_dict(r)
+    
