@@ -1,5 +1,4 @@
 from flask import request
-from alembic import op
 from sqlalchemy import  create_engine, text
 import os
 
