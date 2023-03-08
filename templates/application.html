@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Submitted</title>
+  </head>
+  <body>
+    {% include 'nav.html' %} 
+    {% include 'banner.html' %}
+    <div class="container">
+        <div class="text-center mt-2 mb-4">Juo Careers</div>
+    <h4>Full Name</h4>
+    <div>{{application['full_name']}}</div>
+    <br />
+
+    <h4>Email</h4>
+    <div>{{application['email']}}</div>
+    <br />
+
+    <h4>linkedin_URL</h4>
+    <div>{{application['linked_url']}}</div>
+    <br />
+
+    <h4>Education</h4>
+    <div>{{application['education']}}</div>
+    <br />
+
+    <h4>Work Experience</h4>
+    <div>{{application['work_experience']}}</div>
+    <br />
+
+    <h4>Resume URL</h4>
+    <div>{{application['resume_url']}}</div>
+    </div>
+
+    {% include 'footer.html% }
+  </body>
+</html>
